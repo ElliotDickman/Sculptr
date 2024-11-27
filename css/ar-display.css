@@ -1,0 +1,140 @@
+:root {
+    --sculptr-slate: #36516f;
+    --sculptr-ivory: #f9d37d;
+}
+
+
+#close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+    /* background-color: #FF00FF; */
+    background-image: url(../img/ar-assets/close-icon.png);
+    background-size: contain;
+    visibility: hidden;
+}
+
+
+.scan-overlay {
+    position: absolute;
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: auto;
+    margin-top: 50%;
+    
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+
+#header {
+    position: absolute;
+    top: 0px;
+    z-index: 999;
+}
+
+#logo {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    max-height: 40px; /* Make sure this is same as #a-canvas top val (minus logo top margin) */
+    object-fit: contain;
+}
+
+
+
+
+/* Scan animation */
+/************************************/
+/************************************/
+
+svg#Layer_1 {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 5.5229;
+  stroke-miterlimit: 10;
+}
+
+#outer {
+  transform-origin: 50% 50%;
+  animation: outerRot 10s ease-in alternate-reverse infinite;
+}
+
+#inner {
+  /*fill: cyan;*/
+  transform-origin: 50% 50%;
+  animation: innerRot 10s ease-in alternate infinite;
+}
+
+#center {
+  fill: url("#cGrade");
+  transform-origin: 50% 50%;
+    animation: centerRot 10s linear infinite;
+}
+
+@keyframes innerRot {
+  0% {transform: rotate(0deg);}
+  18% {transform: rotate(10deg);}
+  36% {transform: rotate(90deg);}
+  60% {transform: rotate(40deg);}
+  75% {transform: rotate(30deg);}
+  80% {transform: rotate(35deg);}
+  100% {transform: rotate(-10deg);}
+}
+
+@keyframes outerRot {
+  0% {transform: rotate(0deg);}
+  40% {transform: rotate(50deg);}
+  55% {transform: rotate(30deg);}
+  85% {transform: rotate(35deg);}
+  100% {transform: rotate(-10deg);}
+}
+
+@keyframes centerRot {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(359deg);}
+}
+
+
+/************************************/
+
+
+#arjs-video {
+    box-shadow: 0px 0px 10px black;
+}
+
+#arjs-video, #a-canvas {
+    /* Edit to change header size */
+    top: 50px !IMPORTANT;
+}
+
+#container {
+    margin-top: 50px;
+}
+
+body {
+    /* margin: 0px !IMPORTANT; */
+}
+
+a-scene {
+    /* height: 80%; */
+}
+
+/*
+@media screen and (min-width: 769px) {
+    a-scene {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #content-desktop {
+        display: none;
+    }
+}
+*/

@@ -1,0 +1,88 @@
+{
+    "def": {
+        "name": "default",
+        "url": null,
+        "id": 0,
+
+        "zoom": "1 1 1",
+        "zoomSense" : 8000,
+        "senseX": 15,
+        "senseY": 12,
+        "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "angle": {
+            "x": 0,
+            "y": 0
+        },
+
+        "type": "gltf"
+    },
+
+    "fish": {
+        "name": "fish",
+        "url": "access/3d/fish/Goldfish_01.gltf",
+        "id": 1,
+
+        "zoom": 0.3,
+        "zoomSense" : 8000,
+        "senseX": 15,
+        "senseY": 12,
+        "position": {
+            "x": 0,
+            "y": -0.5,
+            "z": -6.5
+        },
+        "angle": {
+            "x": 0,
+            "y": 0.5
+        },
+
+        "type": "gltf"
+    },
+
+    "tomato": {
+        "name": "tomato",
+        "url": "access/3d/grape_tile/Grape_tile.gltf",
+        "id": 2,
+        "zoom": 0.3,
+        "zoomSense" : 8000,
+        "senseX": 15,
+        "senseY": 12,
+        "position": {
+            "x": 0,
+            "y": 1,
+            "z": -20
+        },
+        "angle": {
+            "x": 0,
+            "y": 0
+        },
+
+        "type": "gltf"
+    },
+    
+    "amphora": {
+        "name": "amphora",
+        "url": "access/3d/amphora/scene.gltf",
+        "id": 3,
+
+        "zoom": 0.1,
+        "zoomSense" : 20000,
+        "senseX": 8,
+        "senseY": 8,
+        "position": {
+            "x": 0,
+            "y": 0.5,
+            "z": -6.5
+        },
+        "angle": {
+            "x": 0,
+            "y": 0
+        },
+
+        "type": "gltf"
+    }
+}
